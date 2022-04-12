@@ -1,0 +1,121 @@
+* {
+    box-sizing: border-box;
+}
+
+.blind {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+}
+
+/* reset */
+
+a {
+    text-decoration: none;
+    list-style-type: none;
+    padding-left: 0;
+    margin-left: 0;
+    color: inherit;
+}
+
+/* login-cont */
+
+.login-cont {
+    width: 350px;
+    padding: 18px 15px 17px;
+    margin: 20px auto;
+    background-color: #fff;
+    border: 1px solid #DBDBDB;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.login-txt {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.25;
+    color: #000000;
+    margin: 18px 0 15px 0;
+}
+
+.login-link {
+    display: block;
+    background-color: #711BFF;
+    height: 40px;
+    padding: 10px 107px 12px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1.25;
+    color: #FFFFFF;
+    transition: all 0.5s ease-in;
+}
+
+.login-link:hover {
+    background-color: #4d00cc;
+}
+
+.login-logo {
+    width: 64px;
+    vertical-align: bottom;
+    margin-right: 4px;
+}
+
+.bottom-left {
+    float: left;
+    font-size: 12px;
+    line-height: 1.25;
+    color: #767676;
+}
+
+.bottom-left .login-lock {
+    width: 16px;
+    vertical-align: middle;
+    transform: translateY(-2px);
+}
+
+.bottom-right {
+    float: right;
+    font-size: 12px;
+    line-height: 1.25;
+    color: #767676;
+}
+
+.login-id:hover,
+.login-pw:hover,
+.login-join:hover {
+    color: #711BFF;
+}
+
+.login-id {
+    transition: all 0.25s ease-in;
+}
+
+.login-pw {
+    float: right;
+    transition: all 0.25s ease-in;
+}
+
+.login-join {
+    transition: all 0.25s ease-in;
+}
+
+.bottom-left::after {
+    display: block;
+    float: right;
+    content: '';
+    width: 1px;
+    height: 12px;
+    background-color: #767676;
+    margin: 0 4px;
+    transform: translateY(2px);
+}
+
+.bottom-right .login-user {
+    vertical-align: bottom;
+    width: 16px;
+}
